@@ -2,12 +2,28 @@
 import { Fragment } from "react";
 import "./MainSection.css";
 
+import NewContactForm from "../NewContactForm/NewContactForm";
+
 const MainSection = (props) => {
   const selectedContact = props.selectedContact;
+  const showContactForm = props.showContactForm;
+  const setShowContactForm = props.setShowContactForm;
+  const setSelectedContact = props.setSelectedContact;
+
+  function handleClick() {
+    setShowContactForm(true);
+    setSelectedContact(null);
+  }
+
+  if (showContactForm && selectedContact === null) {
+    return <NewContactForm />;
+  }
 
   return (
     <div className="main-section">
-      <button className="main-section__button">Add New Contact</button>
+      <button className="main-section__button" onClick={handleClick}>
+        Add New Contact
+      </button>
       <div className="main-section__content">
         {selectedContact !== null ? (
           <Fragment>

@@ -4,6 +4,7 @@ import "./Sidebar.css";
 const Sidebar = (props) => {
   const contacts = props.contacts;
   const setSelectedContact = props.setSelectedContact;
+  const setShowContactForm = props.setShowContactForm;
 
   return (
     <div className="sidebar">
@@ -14,6 +15,7 @@ const Sidebar = (props) => {
             <p
               onClick={() => {
                 setSelectedContact(contact);
+                setShowContactForm(false);
               }}
               className="sidebar-list__item"
               key={index + contact.first_name}

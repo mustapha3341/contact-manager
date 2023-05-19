@@ -1,7 +1,7 @@
-- [] State and Props
-- [] Sharing data between components
-- [] Responding to Events
-- [] Conditional Rendering
+- [x] State and Props
+- [x] Sharing data between components
+- [x] Responding to Events
+- [x] Conditional Rendering
 - [x] Rendering Lists
 - [] Handling User Input and Forms
 - [] Building Reuseable components

@@ -15,4 +15,7 @@ body {
   height: 100vh;
   margin-inline: auto;
   display: flex;
+  position: relative;
+  overflow-x: hidden;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
