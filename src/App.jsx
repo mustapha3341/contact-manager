@@ -1,12 +1,14 @@
 import Sidebar from "./components/Sidebar/Sidebar";
 import MainSection from "./components/MainSection/MainSection";
 
-import { contacts } from "./data/contacts.json";
 import { useState } from "react";
 
 const App = () => {
   const [selectedContact, setSelectedContact] = useState(null);
   const [showContactForm, setShowContactForm] = useState(false);
+  const [contacts, setContacts] = useState([]);
+
+  console.log(contacts);
 
   return (
     <div className="app-component">
@@ -16,6 +18,7 @@ const App = () => {
         setShowContactForm={setShowContactForm}
       />
       <MainSection
+        setContacts={setContacts}
         selectedContact={selectedContact}
         showContactForm={showContactForm}
         setSelectedContact={setSelectedContact}

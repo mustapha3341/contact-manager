@@ -41,3 +41,11 @@
   font-size: 1.1rem;
   margin-top: 3em;
 }
+
+.cancel__btn {
+  background-color: white;
+  color: #766df4;
+  border: 0.5px solid #766df4;
+  cursor: pointer;
+  margin-top: 0;
+}

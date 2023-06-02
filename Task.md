@@ -3,10 +3,13 @@
 - [x] Responding to Events
 - [x] Conditional Rendering
 - [x] Rendering Lists
-- [] Handling User Input and Forms
+- [] Handling User Input and Forms //TODO: form validation....
 - [] Building Reuseable components
 - [] Building a Contact Manager Application
 
 
-
-https://github.com/mustapha3341/contact-manager.git
+//TODO: Take a look at this later by 8:30pm
+Assignment
+- [] add a search field to filter contacts
+- [] add a delete button to delete contacts
+- [] add a feature to clear form after submission
