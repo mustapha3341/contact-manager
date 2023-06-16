@@ -49,3 +49,8 @@
   cursor: pointer;
   margin-top: 0;
 }
+
+.purple-input {
+  background-color: #766df4;
+  color: wheat;
+}
